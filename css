@@ -1,0 +1,52 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.section {
+    float: left;
+    width: 33.33%;
+    border: 1px solid black;
+    margin: 10px;
+    background-color: #e0e0e0; 
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    background-color: #3498db; 
+    color: white; 
+    border-bottom-left-radius: 5px;
+    font-size: 25% 
+}
+
+@media screen and (max-width: 991px) {
+    .section {
+        width: 50%;
+    }
+
+    .section:nth-child(3) {
+        clear: both;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+}
